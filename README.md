@@ -1,4 +1,4 @@
-# Sistema de Registro de Produtos Hidráulicos - Java (Sem Banco de Dados)
+# Sistema de Registro de Produtos Hidráulicos - Java 
 
 Este é um programa Java que permite registrar produtos hidráulicos utilizando listas em memória, aplicando conceitos de Programação Orientada a Objetos (POO).
 
