@@ -56,4 +56,8 @@ Produto já registrado: Tubo PVC
 
 ## Autores
 
-
+Giovane Primo Moretti - 24002113
+Gabriel Trinca de Marchi - 24002112
+Gabriel Henrique dos Reis Diunizio - 24000541
+Rafael Melanda Menatto - 23200271
+Rita de Cássia Del Giudice Conceição - 24000469
