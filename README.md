@@ -60,4 +60,51 @@ Produto registrado com sucesso: Tubo PVC
 Produto registrado com sucesso: Conector PVC
 Produto já registrado: Tubo PVC
 ```
+# Projeto Banco de Dados - Produto e Detalhe do Produto
+
+Este projeto contém um script SQL para criação e manipulação de um banco de dados com duas tabelas principais: `Produto` e `Detalhe_Produto`. O objetivo é representar uma relação entre produtos e seus respectivos detalhes, utilizando boas práticas de modelagem relacional.
+
+## Estrutura do Banco de Dados
+
+### Tabela: Produto
+
+Armazena informações básicas sobre produtos.
+
+| Coluna      | Tipo         | Descrição                       |
+|-------------|--------------|---------------------------------|
+| idProduto   | INT          | Identificador único do produto (PK) |
+| nome        | VARCHAR(100) | Nome do produto                 |
+| preco       | DECIMAL(10,2)| Preço do produto                |
+| validade    | DATE         | Data de validade do produto     |
+
+### Tabela: Detalhe_Produto
+
+Armazena detalhes adicionais sobre os produtos.
+
+| Coluna        | Tipo         | Descrição                            |
+|---------------|--------------|--------------------------------------|
+| idDetalhe     | INT          | Identificador único do detalhe (PK) |
+| idProduto     | INT          | Chave estrangeira para Produto      |
+| descricao     | VARCHAR(255) | Descrição adicional do produto      |
+| fornecedor    | VARCHAR(100) | Nome do fornecedor                  |
+
+### Relacionamento
+
+A tabela `Detalhe_Produto` possui uma chave estrangeira (`idProduto`) que se relaciona com a tabela `Produto`, representando um relacionamento de **1 para muitos** (um produto pode ter vários detalhes).
+
+## Inserções de Dados
+
+O script também inclui exemplos de inserção de dados (`INSERT INTO`) para ambas as tabelas, facilitando testes e visualização da estrutura.
+
+## Como usar
+
+1. Abra seu gerenciador MySQL (como o MySQL Workbench).
+2. Crie um novo banco de dados (opcional).
+3. Execute o conteúdo do arquivo `Codigo.sql`.
+4. As tabelas serão criadas e populadas automaticamente com dados de exemplo.
+
+## Requisitos
+
+- MySQL 5.7 ou superior
+- Um ambiente para execução de comandos SQL (como Workbench, DBeaver, phpMyAdmin, etc.)
 
